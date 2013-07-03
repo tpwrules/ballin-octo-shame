@@ -24,8 +24,8 @@ cp -r assets build/zip/assets
 cp pack.mcmeta mcmod.info build/zip
 
 cd build/zip
-rm ../crappymod.zip
-zip -r ../crappymod.zip *
+rm ../crappymod.jar
+zip -r ../crappymod.jar *
 cd ../..
 
-cp build/crappymod.zip ~/Library/Application\ Support/minecraft/mods/
+cp build/crappymod.jar ~/Library/Application\ Support/minecraft/mods/

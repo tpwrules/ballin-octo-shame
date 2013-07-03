@@ -5,9 +5,9 @@ import net.minecraft.block.Block
 import net.minecraft.block.material.Material
 import cpw.mods.fml.relauncher.{Side, SideOnly}
 
-class CrappyBlock(id: Int) extends Block(id, Material.rock) {
+class CrappyBlock(id: Int) extends Block(id, Material.wood) {
   setUnlocalizedName("crappyBlock")
-  func_111022_d("crappymod:crappyBlock") // set texture path name
+  func_111022_d("crappymod:crappyblock") // set texture path name
 
   GameRegistry.registerBlock(this, "CrappyBlock")
 }

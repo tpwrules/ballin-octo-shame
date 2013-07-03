@@ -23,8 +23,12 @@ object CrappyMod {
   var crappyBlock: CrappyBlock = null
 
   @Mod.EventHandler
-  def init(e: event.FMLInitializationEvent) = {
+  def preinit(e: event.FMLPreInitializationEvent) = {
     crappyBlock = new CrappyBlock(666)
+  }
+
+  @Mod.EventHandler
+  def init(e: event.FMLInitializationEvent) = {
     println("Initialized!")
     println(proxy.getSide)
   }
