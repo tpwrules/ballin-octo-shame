@@ -14,14 +14,17 @@ class ClientProxy extends CommonProxy {
 
 @Mod(modLanguage="scala", modid="crappymod", name="Crappy Mod", version="1")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
-object CrappyMod {
+class CrappyMod {
   @SidedProxy(
     clientSide="tpw_rules.crappymod.ClientProxy",
     serverSide="tpw_rules.crappymod.CommonProxy")
   var proxy: CommonProxy = null
 
+  var crappyBlock: CrappyBlock = null
+
   @Mod.EventHandler
   def init(e: event.FMLInitializationEvent) = {
+    crappyBlock = new CrappyBlock(666)
     println("Initialized!")
     println(proxy.getSide)
   }

@@ -7,7 +7,7 @@ rm -r forge/mcp/src/minecraft/tpw_rules
 cp -r src/tpw_rules forge/mcp/src/minecraft/tpw_rules
 
 cd forge/mcp/bin
-scalac -classpath client_161.jar -sourcepath ../src -d minecraft/ ../src/minecraft/tpw_rules/crappymod/*.scala
+scalac -classpath client_161.jar:../jars/libraries/com/google/guava/guava/14.0/guava-14.0.jar -sourcepath ../src -d minecraft/ ../src/minecraft/tpw_rules/crappymod/*.scala
 cd ..
 ./reobfuscate.sh
 
