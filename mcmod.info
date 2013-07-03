@@ -1,0 +1,17 @@
+{
+  "modinfoversion": 1,
+  "modlist": [{
+    "modid": "CrappyMod",
+    "name": "Crappy Mod",
+    "description": "It's crap!",
+    "version": "1",
+    "mcversion": "1.6.1",
+    "url": "",
+    "updateUrl": "",
+    "authors": [ "tpw_rules" ],
+    "credits": "",
+    "logoFile": "",
+    "requiredMods": [ "Forge" ],
+    "useDependencyInformation": "false"
+  }]
+}
