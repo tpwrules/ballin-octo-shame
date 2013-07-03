@@ -14,7 +14,7 @@ class ClientProxy extends CommonProxy {
 
 @Mod(modLanguage="scala", modid="crappymod", name="Crappy Mod", version="1")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
-class CrappyMod {
+object CrappyMod {
   @SidedProxy(
     clientSide="tpw_rules.crappymod.ClientProxy",
     serverSide="tpw_rules.crappymod.CommonProxy")
