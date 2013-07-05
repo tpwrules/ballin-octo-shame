@@ -20,11 +20,12 @@ object CrappyMod {
     serverSide="tpw_rules.crappymod.CommonProxy")
   var proxy: CommonProxy = null
 
-  var crappyBlock: CrappyBlock = null
+  lazy val crappyBlock: CrappyBlock = new CrappyBlock(666)
 
   @Mod.EventHandler
   def preinit(e: event.FMLPreInitializationEvent) = {
-    crappyBlock = new CrappyBlock(666)
+    // make sure our blocks get initialized
+    val lolol = crappyBlock
   }
 
   @Mod.EventHandler
